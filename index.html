@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/animation-home.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    body {
+        width: 100%;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to bottom, #85AC59, #CFDEBD);
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-top: 100px;
+
+        img {
+            float: right;
+        }
+    }
+
+    .section1-img {
+        margin-bottom: 5px;
+    }
+
+    .title-top {
+        width: 100%;
+    }
+
+    .title-top1 {
+        width: 50%;
+        border-bottom: 2px solid black;
+    }
+
+    .title-main {
+        font-family: "Big Shoulders Stencil", sans-serif;
+        width: 70%;
+        text-align: right;
+        font-size: 120px;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+
+
+    .slogan-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .short-line {
+        width: 40px;
+        height: 1px;
+        background-color: #333;
+    }
+
+    .section2_title-op {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .home-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .home-line {
+        width: 60%;
+        height: 1px;
+        background-color: black;
+    }
+
+    .section3 {
+        background-color: rgb(176, 193, 156);
+    }
+
+    .section3_object {
+        width: 100%;
+        height: 455px;
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 45px;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+    }
+
+    .section3_object--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .btn-beauty {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: #00796b;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-beauty:hover {
+        background-color: #004d40;
+        transform: translateY(-2px);
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+
+    .slider-track {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.8s ease-in-out;
+        width: max-content;
+    }
+
+    .book-card {
+        flex: 0 0 700px;
+        padding: 0 15px;
+    }
+
+
+    .section4-wrapper {
+        padding: 60px;
+        background-color: rgb(184, 194, 172);
+        height: max-content + 20px;
+    }
+
+    .slider-container-internal {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-track {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        transition: transform 0.8s ease-in-out;
+        width: max-content;
+    }
+
+    .section4_img {
+        flex: 0 0 300px;
+        height: auto;
+        padding: 20px 0;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <section class="section1">
+            <div class="section1-text">
+                <div>
+                    <div class="title-top">
+                        <h1 class="title-top1">Cửa hàng sách</h1>
+                    </div>
+                    <div>
+                        <h1 class="title-main">Thời gian</h1>
+                    </div>
+                    <div class="slogan-container">
+                        <span class="short-line"></span>
+                        <p>Nơi ý tưởng khởi nguồn</p>
+                        <span class="short-line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section1-img">
+                <img src="../img/home_section1.svg" alt="">
+            </div>
+        </section>
+        <div class="home-flex-center">
+            <div class="home-line"></div>
+        </div>
+        <section class="section2">
+            <div class="home-flex-center">
+                <h1>Danh mục sách bán chạy</h1>
+            </div>
+            <div class="section2_title-op">
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 10.png" alt=""></a>
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 11.png" alt=""></a>
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 12.png" alt=""></a>
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 13.png" alt=""></a>
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 14.png" alt=""></a>
+                <a href="#"><img class="jump-effect" src="../img/Rectangle 15.png" alt=""></a>
+            </div>
+        </section>
+        <section class="section3 slider-container">
+            <div class="home-flex-center">
+                <h1>Các thứ khác</h1>
+            </div>
+            <div id="track" class="slider-track">
+                <a href="" class="book-card">
+                    <div class="section3_object">
+                        <img style="width: 100%; border-radius: 8px; margin-top: 5px; object-fit: cover;"
+                            src="../img/home_section3.svg" alt="">
+                        <div class="section3_object--text">
+                            <h3 style="text-align: center; border-bottom: 2px solid black; padding: 10px 0;">Cây cam
+                                ngọt của tôi</h3>
+                            <div>
+                                <p><b>Tác giả: Nguyễn Nhật Ánh</b></p>
+                                <p><b>Thể loại: Truyện ngắn</b></p>
+                                <p><b>Đánh giá: 5/5</b></p>
+                            </div>
+                            <div style="display: flex; justify-content: space-around; align-items: center;">
+                                <p><b>Giá: 100.000đ</b></p>
+                                <button class="btn-beauty">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="book-card">
+                    <div class="section3_object">
+                        <img style="width: 100%; border-radius: 8px; margin-top: 5px; object-fit: cover;"
+                            src="../img/home_section3.svg" alt="">
+                        <div class="section3_object--text">
+                            <h3 style="text-align: center; border-bottom: 2px solid black; padding: 10px 0;">Quyển sách
+                                thứ 2</h3>
+                            <div>
+                                <p><b>Tác giả: Tác giả A</b></p>
+                                <p><b>Thể loại: Kỹ năng</b></p>
+                                <p><b>Đánh giá: 4/5</b></p>
+                            </div>
+                            <div style="display: flex; justify-content: space-around; align-items: center;">
+                                <p><b>Giá: 150.000đ</b></p>
+                                <button class="btn-beauty">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="book-card">
+                    <div class="section3_object">
+                        <img style="width: 100%; border-radius: 8px; margin-top: 5px; object-fit: cover;"
+                            src="../img/home_section3.svg" alt="">
+                        <div class="section3_object--text">
+                            <h3 style="text-align: center; border-bottom: 2px solid black; padding: 10px 0;">Quyển sách
+                                thứ 2</h3>
+                            <div>
+                                <p><b>Tác giả: Tác giả A</b></p>
+                                <p><b>Thể loại: Kỹ năng</b></p>
+                                <p><b>Đánh giá: 4/5</b></p>
+                            </div>
+                            <div style="display: flex; justify-content: space-around; align-items: center;">
+                                <p><b>Giá: 150.000đ</b></p>
+                                <button class="btn-beauty">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="book-card">
+                    <div class="section3_object">
+                        <img style="width: 100%; border-radius: 8px; margin-top: 5px; object-fit: cover;"
+                            src="../img/home_section3.svg" alt="">
+                        <div class="section3_object--text">
+                            <h3 style="text-align: center; border-bottom: 2px solid black; padding: 10px 0;">Quyển sách
+                                thứ 2</h3>
+                            <div>
+                                <p><b>Tác giả: Tác giả A</b></p>
+                                <p><b>Thể loại: Kỹ năng</b></p>
+                                <p><b>Đánh giá: 4/5</b></p>
+                            </div>
+                            <div style="display: flex; justify-content: space-around; align-items: center;">
+                                <p><b>Giá: 150.000đ</b></p>
+                                <button class="btn-beauty">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="book-card">
+                    <div class="section3_object">
+                        <img style="width: 100%; border-radius: 8px; margin-top: 5px; object-fit: cover;"
+                            src="../img/home_section3.svg" alt="">
+                        <div class="section3_object--text">
+                            <h3 style="text-align: center; border-bottom: 2px solid black; padding: 10px 0;">Quyển sách
+                                thứ 2</h3>
+                            <div>
+                                <p><b>Tác giả: Tác giả A</b></p>
+                                <p><b>Thể loại: Kỹ năng</b></p>
+                                <p><b>Đánh giá: 4/5</b></p>
+                            </div>
+                            <div style="display: flex; justify-content: space-around; align-items: center;">
+                                <p><b>Giá: 150.000đ</b></p>
+                                <button class="btn-beauty">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <section class="section4">
+        <div class="home-flex-center">
+            <h1>Tiêu điểm tuần</h1>
+        </div>
+
+        <div class="section4-wrapper">
+            <div class="slider-container-internal">
+                <div id="track4" class="slider-track">
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                    <div class="section4_img"><img src="../img/home_section3.svg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const track = document.getElementById('track');
+    const cards = document.querySelectorAll('.book-card');
+    let index = 0;
+    const cardsToShow = 3;
+
+    function autoPlay() {
+        index++;
+        if (index > cards.length - cardsToShow) {
+            index = 0;
+        }
+        const cardWidth = cards[0].offsetWidth;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+    setInterval(autoPlay, 3000);
+
+
+
+    const track4 = document.getElementById('track4');
+    const cards4 = document.querySelectorAll('.section4_img');
+
+    let index4 = 0;
+    const cardsToShow4 = 4;
+
+    function autoPlaySection4() {
+        index4++;
+
+        if (index4 > cards4.length - cardsToShow4) {
+            index4 = 0;
+        }
+
+        const moveDistance = cards4[0].offsetWidth + 20; // cộng gap
+
+        track4.style.transform = `translateX(-${index4 * moveDistance}px)`;
+    }
+
+    setInterval(autoPlaySection4, 3500);
+
+    setInterval(autoPlaySection4, 3500);
+</script>
+
+</html>

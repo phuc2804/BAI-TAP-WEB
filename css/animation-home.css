@@ -1,0 +1,8 @@
+.jump-effect {
+  display: inline-block;
+  transition: transform 0.3s ease; 
+}
+
+.jump-effect:hover {
+  transform: translateY(-10px);
+}
