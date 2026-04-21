@@ -192,10 +192,107 @@
         justify-content: center;
         align-items: center;
     }
+    /* HEADER */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-family: "Big Shoulders Stencil", sans-serif;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #00796b;
+}
+
+.btn-login {
+    padding: 8px 18px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #004d40;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.footer {
+    background-color: #2e3d2f;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px 60px;
+}
+
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+}
 </style>
 
 <body>
     <div class="container">
+        <header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <h2>📚 Thời Gian</h2>
+        </div>
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+        <div class="header-actions">
+            <button class="btn-login">Đăng nhập</button>
+        </div>
+    </div>
+</header>
         <section class="section1">
             <div class="section1-text">
                 <div>
@@ -353,6 +450,30 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-col">
+            <h3>📚 Cửa hàng sách Thời Gian</h3>
+            <p>Nơi ý tưởng khởi nguồn.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Liên hệ</h4>
+            <p>Email: contact@thoigianbook.com</p>
+            <p>Điện thoại: 0123 456 789</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Địa chỉ</h4>
+            <p>123 Đường Sách, Quận 1</p>
+            <p>TP. Hồ Chí Minh</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Thời Gian Bookstore. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 <script>
     const track = document.getElementById('track');
